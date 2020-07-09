@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.ProfilePage">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Baglanti sayisi"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/profileconnectioncounttext"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/profileconnectioncount"
+        android:textColor="#000"
+        android:layout_below="@+id/profileconnectioncounttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/profileeditbutton"
+        android:layout_below="@+id/profileconnectioncount"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_marginLeft="100dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/profileexitbutton"
+        android:layout_toRightOf="@+id/profileeditbutton"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/profileconnectioncount"
+        android:layout_marginLeft="20dp"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cikis Yap" />
+
+    <TextView
+        android:id="@+id/profilecontacttext"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İletisim"
+        android:textColor="#000"
+        android:layout_below="@+id/profileexitbutton"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/profilecontact"
+        android:layout_width="200dp"
+        android:layout_below="@+id/profilecontacttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="TextView" />
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileinfo"
+        android:layout_below="@+id/profilecontact"
+        android:layout_marginTop="10dp"
+        android:maxLines="6"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profileinfo"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:text="Yeteneklerim"
+        android:id="@+id/profiletexttalent"
+        android:gravity="center"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profiletalentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profiletexttalent"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/recycler_view_item_2" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

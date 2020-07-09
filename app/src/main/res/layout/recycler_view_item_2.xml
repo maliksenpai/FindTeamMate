@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profilelistlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bubble"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+  <TextView
+      android:id="@+id/profiletalentlisttext"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textColor="#000"
+      tools:text="@tools:sample/lorem" />
+</LinearLayout>

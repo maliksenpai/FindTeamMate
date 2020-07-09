@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/button" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/button" />
+
+    <EditText
+        android:id="@+id/registerpagenick"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Nickname" />
+
+    <EditText
+        android:id="@+id/registerpagemail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerpagenick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="E-Mail Adress"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/registerpagepass"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerpagemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registerpagebutton"
+        android:layout_width="179dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/registerpagepass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent"
+        android:text="Sign Up"
+        android:textColor="#fff" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FindTeamMate</string>
+    <string name="title_activity_main2_page">Main2Page</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

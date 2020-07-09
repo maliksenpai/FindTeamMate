@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.ProjectPage">
+
+    <TextView
+        android:id="@+id/projectsubject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/projectnick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/projectsubject"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/projectinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="#000"
+        android:layout_below="@id/projectnick"
+        android:layout_marginTop="30dp"
+        android:text="TextView" />
+</RelativeLayout>

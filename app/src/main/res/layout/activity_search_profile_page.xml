@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.SearchProfilePage">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Reference Count"
+        android:gravity="center"
+        android:id="@+id/searchconnectioncounttext"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:id="@+id/searchconnectioncount"
+        android:textColor="#000"
+        android:layout_below="@+id/searchconnectioncounttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/searchmessage"
+        android:layout_toRightOf="@+id/profileeditbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/searchconnectioncount"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message" />
+
+    <Button
+        android:id="@+id/searchvote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/searchconnectioncount"
+        android:layout_toRightOf="@+id/searchmessage"
+        android:layout_marginTop="10dp"
+        android:text="Suggest" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/searchcontacttext"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/searchmessage"
+        android:text="Contact"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:id="@+id/searchcontact"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/searchcontacttext"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:maxLines="2"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchinfo"
+        android:textColor="#000"
+        android:maxLines="6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/searchcontact"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/searchinfo"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:text="Talents"
+        android:id="@+id/searchtexttalent"
+        android:gravity="center"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchtalentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchtexttalent"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/recycler_view_item_2" />
+
+</RelativeLayout>

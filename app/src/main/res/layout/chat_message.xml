@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/chatrecnick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxHeight="40dp"
+        android:textStyle="bold"
+        android:maxWidth="300dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/chatrectext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxHeight="40dp"
+        android:maxWidth="300dp"
+        android:layout_below="@+id/chatsendnick"/>
+
+    <TextView
+        android:id="@+id/chatsendnick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:maxHeight="40dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/chatsendtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxHeight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chatrecnick"/>
+</RelativeLayout>

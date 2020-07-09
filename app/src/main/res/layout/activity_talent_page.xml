@@ -1,0 +1,60 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/talenttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Talent"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/talentadd"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/talenttext"
+        android:background="@color/colorAccent"
+        android:text="Add"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/talenttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Talents"
+        android:textColor="#000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/talentlist"
+        android:layout_width="282dp"
+        android:layout_height="192dp"
+        android:layout_below="@id/talenttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        tools:listitem="@layout/recycler_view_item" />
+
+    <Button
+        android:id="@+id/talentfinishbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/talentlist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Done"
+        android:textColor="#fff" />
+</RelativeLayout>

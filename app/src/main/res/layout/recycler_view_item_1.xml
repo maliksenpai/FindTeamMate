@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainlistlayout"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bubble"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/mainlistnick"
+        android:layout_width="100dp"
+        android:textColor="#000"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/mainlistconnection"
+        android:layout_below="@+id/mainlistnick"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:layout_width="100dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/mainlisttalent1"
+        android:layout_toRightOf="@id/mainlistnick"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/mainlisttalent2"
+        android:layout_toRightOf="@+id/mainlistnick"
+        android:layout_below="@+id/mainlisttalent1"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</RelativeLayout>

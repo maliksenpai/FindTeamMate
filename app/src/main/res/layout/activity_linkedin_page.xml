@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.LinkedinPage">
+
+    <EditText
+        android:id="@+id/linkedinedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:hint="Isim" />
+
+    <TextView
+        android:id="@+id/linkedintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linkedinedittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="You can add your optional linkedin name and information about yourself so that people can find and recognize you more easily.  "
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/linkedininfo"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:gravity="start"
+        android:hint="Bilgi"
+        android:maxLines="6"
+        android:layout_below="@id/linkedinedittext"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linkedininfo"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/linkedinaddbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linkedinedittext"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Add"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/linkedinexitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Skip"
+            android:textColor="#fff" />
+    </LinearLayout>
+</RelativeLayout>
